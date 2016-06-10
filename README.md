@@ -31,3 +31,18 @@ $ php simples/receive.php
 Baseado no tutorial "Work Queues" do RabbitMQ: [https://www.rabbitmq.com/tutorials/tutorial-two-php.html](https://www.rabbitmq.com/tutorials/tutorial-two-php.html).
 
 
+Execute na raiz:
+
+```sh
+$ php worker/new_task.php Ola teste
+$ php worker/new_task.php Ola teste...
+$ php worker/new_task.php Ola teste1
+$ php worker/new_task.php Ola teste2
+
+```
+
+E em outro shell, rode o worker.php:
+
+```sh
+$ php worker/worker.php
+```
